@@ -2,4 +2,4 @@ const makeButton = (buttonName) => {
 	return `Button: ${buttonName}`;
 };
 
-modules.exports = makeButton;
+module.exports = makeButton;
