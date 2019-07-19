@@ -1,12 +1,9 @@
 import nav from "./nav";
 import { top, bottom } from "./footer";
 import makeButton from "./button";
-import { makeColorStyle } from "./button-styles";
+import { red, blue, makeColorStyle } from "./button-styles";
 
-console.log(
-  nav(),
-  top,
-  bottom,
-  makeButton("My first button!"),
-  makeColorStyle("cyan")
-);
+const button = makeButton("A button");
+document.body.appendChild(button);
+
+console.log(nav(), top, bottom, makeColorStyle("cyan"));
